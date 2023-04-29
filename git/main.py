@@ -57,13 +57,13 @@ Select The Option :
 """)
    suo=input("Select The Options : ")
    if suo == '1':
-      os.system('python git/some.py')
+      os.system('python some.py')
    elif suo == '2':
-      os.system('python git/filter1.py')
+      os.system('python filter1.py')
    elif suo == '3':
-      os.system('python git/filter2.py')
+      os.system('python filter2.py')
    elif suo == '4':
-      os.system('python git/ulfil.py')
+      os.system('python ulfil.py')
    elif suo == '5':
       print("")
       print("Iam working hard on this It will ready soon....!")
@@ -72,7 +72,7 @@ Select The Option :
       print("")
       sksj = input("press any key to continue.......")
    elif suo == '6':
-      os.system('python git/about.py')
+      os.system('python about.py')
    elif suo == '7':
       sys.exit(0)
    else:
