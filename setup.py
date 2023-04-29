@@ -15,7 +15,7 @@ setup(
     # other options...
     entry_points={
         'console_scripts': [
-            'anime-hive = anime-hive.main:main'
+            'anime-hive = git.main:main'
 
     ],
 )
