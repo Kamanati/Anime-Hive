@@ -12,6 +12,11 @@ setup(
         'bs4',
         'pyfiglet',
         'termcolor',
+    # other options...
+    entry_points={
+        'console_scripts': [
+            'anime-hive = anime-hive.main:main'
+
     ],
 )
 
