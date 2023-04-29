@@ -7,7 +7,7 @@ if not os.path.exists('anime_history.txt'):
     open("anime_history.txt", 'w').close()
 while(1):
    os.system('clear')
-   logo_text = "Anime-Hive"
+   logo_text = "Anime-Scope"
    logo_ascii = pyfiglet.figlet_format(logo_text)
    print(logo_ascii)
    print("simple tool to get anime detials")
@@ -157,7 +157,7 @@ while(1):
        print(colored("Producers: ", "yellow") + colored(producers, "cyan"))
        print("____________________________________")
         # code to display the list of titles and their indices
-       with open('anime_history.txt', 'a') as f:
+       with open('anime_seaech.txt', 'a') as f:
           f.write("``````````````````````````````````````````````````````````")
           f.write("\n")
           f.write("Normal Search")
@@ -189,7 +189,7 @@ while(1):
       
       # display seasons
              print(f"\n{num_seasons} seasons found for '{anime_synonyms}':")
-             with open("anime_history.txt", "a") as f:
+             with open("anime_search.txt", "a") as f:
                 f.write(f"\n{num_seasons} seasons found for '{anime_synonyms}':\n")
                 for i, season_link in enumerate(season_links):
                        season_title = season_link.find('div', class_='title').text.strip()

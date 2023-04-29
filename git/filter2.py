@@ -6,7 +6,7 @@ import pyfiglet
 
 while(1):
    os.system('clear')
-   logo_text = "Anime-Hive"
+   logo_text = "Anime-Scope"
    logo_ascii = pyfiglet.figlet_format(logo_text)
    print(logo_ascii)
    print("simple tool to get anime detials")
@@ -174,6 +174,30 @@ while(1):
        print(colored("Producers: ", "yellow") + colored(producers, "cyan"))
        print("____________________________________")
         # code to display the list of titles and their indices
+       with open('anime_adv_filter.txt', 'a') as f:
+          f.write("``````````````````````````````````````````````````````````")
+          f.write("\n")
+          f.write("Normal Filter Search")
+          f.write("\n")
+          f.write("---------------------------------------\n")
+          f.write("Over View: " + anime_over + "\n")
+          f.write("---------------------------------------\n\n")
+          f.write("Name: " + anime_name + "\n")
+          f.write("Selected Name: " + name_x + "\n")
+          f.write("Synonyms: " + anime_synonyms + "\n")
+          f.write("Aired: " + anime_aired + "\n")
+          f.write("Premiered: " + anime_premiered + "\n")
+          f.write("Duration: " + anime_duration + "\n")
+          f.write("Status: " + anime_status + "\n")
+          f.write("MAL Score: " + anime_score + "\n")
+          f.write("Quality: " + quality + "\n")
+          f.write("Subbed: " + subbed + "\n")
+          f.write("Dubbed: " + dubbed + "\n")
+          f.write("Genres: " + genre_str + "\n")
+          f.write("Studio: " + studio + "\n")
+          f.write("Producers: " + producers + "\n")
+          f.write("____________________________________\n")
+
        try:
              seasons_section = anime_soup.find('section', class_='block_area-seasons')
              season_links = seasons_section.find_all('a', class_='os-item')
@@ -181,9 +205,16 @@ while(1):
       
       # display seasons
              print(f"\n{num_seasons} seasons found for '{name_x}':")
-             for i, season_link in enumerate(season_links):
-                  season_title = season_link.find('div', class_='title').text.strip()
-                  print(f"\033[33m{i+1}\033[0m. \033[96m{season_title}\033[0m")
+             with open("anime_adv_filter.txt", "a") as f:
+                f.write(f"\nNormal Filter's {num_seasons} seasons found for '{anime_x}':\n")
+                for i, season_link in enumerate(season_links):
+                       season_title = season_link.find('div', class_='title').text.strip()
+                       print(f"\033[33m{i+1}\033[0m. \033[96m{season_title}\033[0m")
+                       f.write(f"{i+1}. {season_title}\n")
+     
+#             for i, season_link in enumerate(season_links):
+#                  season_title = season_link.find('div', class_='title').text.strip()
+#                  print(f"\033[33m{i+1}\033[0m. \033[96m{season_title}\033[0m")
       
       # get user input to select a season
              selection = int(input("Enter the number of the season to get details: "))

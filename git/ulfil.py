@@ -5,7 +5,7 @@ import pyfiglet,os
 
 while(1):
    os.system('clear')
-   logo_text = "Anime-Hive"
+   logo_text = "Anime-Scope"
    logo_ascii = pyfiglet.figlet_format(logo_text)
    print(logo_ascii)
    print("simple tool to get anime detials")
@@ -209,7 +209,7 @@ while(1):
        print(colored("Studio: ", "yellow") + colored(studio, "cyan"))
        print(colored("Producers: ", "yellow") + colored(producers, "cyan"))
        print("____________________________________")
-       with open('anime_history.txt', 'a') as f:
+       with open('anime_ultra.txt', 'a') as f:
           f.write("``````````````````````````````````````````````````````````")
           f.write("\n")
           f.write("Ultra Filter Search")

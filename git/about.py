@@ -1,7 +1,7 @@
 print("""
-Anime Hive - A Python Web Scraping Tool
+Anime Scraper - A Python Web Scraping Tool
 
-Anime Hive is a Python Anime scraping tool that allows you to easily gather anime details from any Anime without any errors. With its filter and advanced filter options, you can easily search for specific anime and customize your search results based on various criteria.
+Anime Scraper is a Python Anime scraping tool that allows you to easily gather anime details from any Anime without any errors. With its filter and advanced filter options, you can easily search for specific anime and customize your search results based on various criteria.
 
 Features:
 - Scrapes anime details from various websites
@@ -22,7 +22,7 @@ Usage:
 3. Once the search is complete, the program will display the anime details that match your criteria
 
 Contributing:
-[-] Anime Hive is an open source project and welcomes contributions from anyone. To contribute, simply fork the repository, make your changes, and submit a pull request.
+[-] Anime Scraper is an open source project and welcomes contributions from anyone. To contribute, simply fork the repository, make your changes, and submit a pull request.
 [-] Sends email notifications to the author (hasanfq818@gmail.com) for feedback and suggestions
 
 Contact:
@@ -30,7 +30,7 @@ Contact:
 [-] Sends email notifications to the author (hasanfq818@gmail.com) for feedback and suggestions
 
 License:
-Anime Hive is released under the MIT license. See the LICENSE file for more information.
+Anime Scraper is released under the MIT license. See the LICENSE file for more information.
 """)
 
 sjs=input("press any key to continue.......")
